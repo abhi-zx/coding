@@ -5,10 +5,10 @@ const Show = (props) => {
     let data = props.movie
     // (e) =><NavLink key={data.id} to='/single' ></NavLink>
   return (
-      <Link className="container" to= './single/`${data.id}`' >
-    <div >
+      <Link className="container" to= {`/single/${data.id}`} >
+        <div >
         <img src={data.image_url}/>
-       <h3> {data.movie_name}</h3>
+        <h3> {data.movie_name}</h3>
         </div>
         </Link>
   )
